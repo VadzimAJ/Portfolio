@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { SectionTitle } from '../SectionTitle';
-import { Button } from '../Button';
+import { SectionTitle } from '../../../components/SectionTitle';
+import { Button } from '../../../components/Button';
 
 export const Contacts = () => {
   return(
