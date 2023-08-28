@@ -35,5 +35,4 @@ const StyledSkills = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d47484;
 `

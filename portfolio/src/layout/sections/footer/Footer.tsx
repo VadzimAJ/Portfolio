@@ -8,17 +8,17 @@ export const Footer = () =>{
       <SocialList>
         <SocialItem>
           <SocialLink>
-            <Icon iconId={"js"}/>
+            <Icon iconId={"mail"}/>
           </SocialLink>
         </SocialItem>
         <SocialItem>
           <SocialLink>
-            <Icon iconId={"ts"}/>
+            <Icon iconId={"linkedin"}/>
           </SocialLink>
         </SocialItem>
         <SocialItem>
           <SocialLink>
-            <Icon iconId={"docker"}/>
+            <Icon iconId={"github"}/>
           </SocialLink>
         </SocialItem>
       </SocialList>
@@ -30,14 +30,12 @@ export const Footer = () =>{
 
 
 const StyledFooter = styled.footer`
- display: flex;
- flex-direction: column;
- align-items: center;
-  background-color: #383737;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const Name = styled.span`
-  color:antiquewhite;
   
 `
 const SocialList = styled.ul`
@@ -53,5 +51,4 @@ const SocialLink = styled.a`
   
 `
 const Copyrught = styled.small`
-  color:aquamarine;
 `

@@ -15,5 +15,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   align-items: ${props => props.align || "stretch"};
   flex-wrap: ${props => props.wrap || "nowrap"};
   max-width: ${props => props.widht || "68.0625em"};
+  height: 100%;
   border: .15em solid red;
   `

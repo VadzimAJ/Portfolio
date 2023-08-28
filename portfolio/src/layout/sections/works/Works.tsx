@@ -27,5 +27,4 @@ const StyledWorks = styled.section `
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background-color: aquamarine;
 `

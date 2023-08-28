@@ -24,7 +24,6 @@ const StylesContacts = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 50vh;
-  background-color: #ebebaf;
   
 `
 const StyledForm = styled.form`
@@ -32,7 +31,7 @@ const StyledForm = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.3125em;
 `
 const Field = styled.input`
   
