@@ -31,7 +31,7 @@ const StyledForm = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.3125em;
+  gap: 0.3125rem;
 `
 const Field = styled.input`
   

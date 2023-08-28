@@ -5,13 +5,12 @@ import { Menu } from '../../../components/menu/Menu';
 import { Project } from './project/Project';
 import projectImg from '../../../images/image.jpg'
 
-
 const items = ["All", "Landing Page", "React", "Spa"]
 
-export const Works = () => {
+export const Projects = () => {
   return (
     <StyledWorks>
-        <SectionTitle>Works</SectionTitle>
+        <SectionTitle>Projects</SectionTitle>
         <Menu menuItems={items}/>
       <FlexWrapper direction='row' align='center' justify ='space-around' wrap='wrap'>
         <Project title = "Shelter" text = "Shelter for Pets" src = {projectImg}/>

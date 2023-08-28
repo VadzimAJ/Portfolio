@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-type WorkProrpsType = {
+type ProjectrorpsType = {
   title: string
   text: string
   src: string
 }
-export const Project = (props:WorkProrpsType) => {
+export const Project = (props:ProjectrorpsType) => {
   return (
     <StyledProject>
       <Image src={props.src} alt={props.title}/>

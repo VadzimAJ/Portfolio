@@ -44,7 +44,7 @@ const Mask = styled.span`
 const StyledHeaderMenu = styled.nav `
   ul {
     display: flex;
-    gap: 2em;
+    gap: 2rem;
   }
 `
 
@@ -54,13 +54,13 @@ const ListItem = styled.li`
   &::before{
     content: "";
     display: inline-block;
-    height: .04em;
+    height: .04rem;
     background-color: ${theme.colors.secondaryBgLgt};
 
     position: absolute;
     top: 50%;
-    left: -.02em;
-    right: .01em;
+    left: -.02rem;
+    right: .01rem;
     z-index: 1;
 
     transform: scale(0);
@@ -86,7 +86,7 @@ const ListItem = styled.li`
 
 const Link = styled.a`
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;

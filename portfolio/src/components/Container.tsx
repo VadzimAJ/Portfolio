@@ -1,11 +1,21 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+type ContainerWrapperPropsType = {
+  direction?: string
+  justify?: string
+  align?: string
+  wrap?: string
+  widht?: string
+  margin?: string
+}
+
+export const Container = styled.div<ContainerWrapperPropsType>`
   display: flex;
-  max-width: 1080px;
+  flex-direction: ${props => props.direction || "column"};
+  align-items: ${props => props.align || "center"};
+  max-width: 67.5rem;
   width: 100%;
   min-height: 100%;
-  margin: 0 auto;
-  border: 0.0625em solid green;
+  margin: ${props => props.direction || "0 auto"};
 
 `

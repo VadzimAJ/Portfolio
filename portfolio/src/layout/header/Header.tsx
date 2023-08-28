@@ -9,8 +9,8 @@ const items = ["Home", "Skills", "Works", "Testimony", "Contact"]
 export const Header = () => {
   return (
     <StyledHeader >
-      <Container>
-        <FlexWrapper justify='space-around' align='center'>
+      <Container align='stretch'> 
+        <FlexWrapper justify='space-between' align='center'>
           <Logo />
           <HeaderMenu menuItems={items}/>
         </FlexWrapper>
@@ -21,7 +21,8 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header `
-padding: 1.25em 0;
+padding: .25rem 2rem;
+margin: 0 1.5rem;
 position: fixed;
 top: 0;
 left: 0;
