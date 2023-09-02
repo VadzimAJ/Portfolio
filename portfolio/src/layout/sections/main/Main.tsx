@@ -7,7 +7,7 @@ import { theme } from '../../../styles/Theme';
 
 export const Main = () => {
   return (
-    <StyledMain>
+    <StyledMain id="home">
       <Container margin="0rem auto">
         <FlexWrapper justify = "space-around" align = "center"  wrap = "wrap-reverse" >
           <MainContent>

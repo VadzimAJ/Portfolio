@@ -7,7 +7,7 @@ import projectImg from '../../../images/image.jpg'
 
 export const Projects = () => {
   return (
-    <StyledWorks>
+    <StyledWorks id="projects">
         <Container align = "start">
           <SectionTitle>Projects</SectionTitle>
           <FlexWrapper direction='row' align='center' justify ='space-evently' wrap='wrap'>

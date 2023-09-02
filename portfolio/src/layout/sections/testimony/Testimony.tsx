@@ -6,7 +6,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export const Testimony = () => {
   return (
-    <StyledTestimony>
+    <StyledTestimony id="testimony">
       <SectionTitle>
         Testimony
       </SectionTitle>

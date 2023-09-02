@@ -7,7 +7,7 @@ import { Container } from '../../../components/Container';
 
 export const Skills = () => {
   return (
-    <StyledSkills>
+    <StyledSkills id="skills">
           <Container align = "start">
           <SectionTitle>Skills</SectionTitle>
             <FlexWrapper justify = "center" align = "center" wrap = "wrap" widht = "67.7rem" gap = "7.5rem">

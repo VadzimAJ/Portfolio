@@ -4,7 +4,7 @@ import { Button } from '../../../components/Button';
 
 export const Contacts = () => {
   return(
-    <StylesContacts>
+    <StylesContacts id="contact">
         <SectionTitle>Contacts</SectionTitle>
 
       <StyledForm>

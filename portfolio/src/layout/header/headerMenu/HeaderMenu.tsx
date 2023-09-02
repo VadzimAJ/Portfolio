@@ -6,22 +6,21 @@ export const HeaderMenu = (props: {menuItems: Array<string>}) => {
   return (
       <StyledHeaderMenu>
                 
-                <Link href="" >
-                  {props.menuItems[0]} 
-                        <Mask>
-                          <span>{props.menuItems[0]}</span>
-                        </Mask>
-                        <Mask>
-                          <span>{props.menuItems[0]}</span>
-                        </Mask>
-                      </Link>
-        
-        
+        <Link href={`#${props.menuItems[0]}`} >
+          {props.menuItems[0]} 
+            <Mask>
+              <span>{props.menuItems[0]}</span>
+            </Mask>
+
+            <Mask>
+              <span>{props.menuItems[0]}</span>
+            </Mask>
+        </Link>
+
         <ul>
-        
           {props.menuItems.slice(1).map((item:string, index:number) => {
             return <li style={{width:'fit-content'}} key={index} >
-                      <Link href="">{item} 
+                      <Link href={`#${item}`}>{item} 
                         <Mask>
                           <span>{item}</span>
                         </Mask>
@@ -38,6 +37,7 @@ export const HeaderMenu = (props: {menuItems: Array<string>}) => {
 };
 const Mask = styled.span`
   position: absolute;
+  text-transform: capitalize;
   top: 0;
   left: 0;
   display: inline-block;
@@ -72,7 +72,7 @@ const Link = styled.a`
   font-weight: 500;
   line-height: normal;
   color: transparent;
-    position: relative;
+  position: relative;
 
 
   &::before{
