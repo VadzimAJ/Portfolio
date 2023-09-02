@@ -5,10 +5,23 @@ import { theme } from '../../../styles/Theme';
 export const HeaderMenu = (props: {menuItems: Array<string>}) => {
   return (
       <StyledHeaderMenu>
+                
+                <Link href="" >
+                  {props.menuItems[0]} 
+                        <Mask>
+                          <span>{props.menuItems[0]}</span>
+                        </Mask>
+                        <Mask>
+                          <span>{props.menuItems[0]}</span>
+                        </Mask>
+                      </Link>
+        
+        
         <ul>
-          {props.menuItems.map((item:string, index:number) => {
-            return <ListItem key={index}>
-                      <Link href="">{item}
+        
+          {props.menuItems.slice(1).map((item:string, index:number) => {
+            return <li style={{width:'fit-content'}} key={index} >
+                      <Link href="">{item} 
                         <Mask>
                           <span>{item}</span>
                         </Mask>
@@ -16,7 +29,7 @@ export const HeaderMenu = (props: {menuItems: Array<string>}) => {
                           <span>{item}</span>
                         </Mask>
                       </Link>
-                    </ListItem>
+                    </li>
           })}
         </ul>
       </StyledHeaderMenu>
@@ -42,14 +55,25 @@ const Mask = styled.span`
 `
 
 const StyledHeaderMenu = styled.nav `
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   ul {
     display: flex;
+
     gap: 2rem;
-  }
+    }
 `
 
-const ListItem = styled.li`
-  position: relative;
+const Link = styled.a`
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: transparent;
+    position: relative;
+
 
   &::before{
     content: "";
@@ -82,13 +106,6 @@ const ListItem = styled.li`
       transform: skewX(12deg) translateX(-.01em);
     }
   }
-`
 
-const Link = styled.a`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  color: transparent;
+
 `

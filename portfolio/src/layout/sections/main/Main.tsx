@@ -27,7 +27,7 @@ export const Main = () => {
 };
 
 const Photo = styled.img `
-  max-width: 32.9rem;
+  max-width: 35rem;
   object-fit: cover;
 `
 const StyledMain = styled.section`

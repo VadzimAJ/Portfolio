@@ -5,15 +5,14 @@ import { HeaderMenu } from './headerMenu/HeaderMenu';
 import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
 
-const items = ["Home", "Skills", "Works", "Testimony", "Contact"]
+const items = ["Home", "Skills", "Projects", "Testimony", "Contact"]
 export const Header = () => {
   return (
     <StyledHeader >
-      <Container align='stretch'> 
-        <FlexWrapper justify='space-between' align='center'>
-          <Logo />
+      <Container align='end'> 
+       
           <HeaderMenu menuItems={items}/>
-        </FlexWrapper>
+      
       </Container>
     </StyledHeader>
   );
@@ -28,4 +27,5 @@ top: 0;
 left: 0;
 right: 0;
 z-index: 9999;
+padding: 2.5em 0 2.5em 0;
 `

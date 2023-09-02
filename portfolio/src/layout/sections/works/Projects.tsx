@@ -1,22 +1,21 @@
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
-import { Menu } from '../../../components/menu/Menu';
 import { Project } from './project/Project';
+import { Container } from '../../../components/Container';
 import projectImg from '../../../images/image.jpg'
-
-const items = ["All", "Landing Page", "React", "Spa"]
 
 export const Projects = () => {
   return (
     <StyledWorks>
-        <SectionTitle>Projects</SectionTitle>
-        <Menu menuItems={items}/>
-      <FlexWrapper direction='row' align='center' justify ='space-around' wrap='wrap'>
-        <Project title = "Shelter" text = "Shelter for Pets" src = {projectImg}/>
-        <Project title = "Plants" text = "Plants project" src = {projectImg}/>
-      </FlexWrapper>
-
+        <Container align = "start">
+          <SectionTitle>Projects</SectionTitle>
+          <FlexWrapper direction='row' align='center' justify ='space-evently' wrap='wrap'>
+            <Project title = "Shelter" text = "Shelter for Pets" src = {projectImg}/>
+            <Project title = "Plants" text = "Plants project" src = {projectImg}/>
+          </FlexWrapper>
+        </Container>
+        
     </StyledWorks>
   );
 };
