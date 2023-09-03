@@ -8,6 +8,7 @@ export const theme = {
     primaryBgLgt: "#FAFAFA",
     secondaryBgLgt: "#5222D0",
     accentBgLgt: "#F5F2FD",
+    placeholderLgt: "#919B9B",
   
     fontDrk: "#D7E5EC",
     fontAccentDrk: "#BDEBEA",
