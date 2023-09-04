@@ -55,7 +55,7 @@ const Mask = styled.span`
     top: 50%;
     span{
       display: inline-block;
-      transform: translateY(-50%);
+      transform: translateY(-50.01%);
     }
   }
 `
@@ -70,6 +70,7 @@ const StyledHeaderMenu = styled.nav `
     display: flex;
     justify-content: center; 
     align-items: center; 
+    user-select: none;
     gap: 2rem;
     }
     
@@ -80,7 +81,13 @@ const StyledHeaderMenu = styled.nav `
     border-radius: 0.375rem;
     }
 
-  & ul li:last-child span{
+    & ul li:last-child:active{
+      transform: translateY(.1rem);
+      box-shadow: 0px 0.7rem 0.8rem rgba(0, 0, 0, 0.25);
+    }
+
+
+  & ul li:last-child span, {
     color: ${theme.colors.fontSecondaryLgt};
   }
 
@@ -94,6 +101,7 @@ const Link = styled.a`
   line-height: normal;
   color: transparent;
   position: relative;
+  user-select: none;
 
 
   &::before{
@@ -104,16 +112,12 @@ const Link = styled.a`
 
     position: absolute;
     top: 50%;
-    left: -.02rem;
+    left: -.01rem;
     right: .01rem;
     z-index: 1;
 
     transform: scale(0);
 
-  }
-
-  &:last-child::before{
-    background-color: red;
   }
 
   &:hover {
@@ -130,6 +134,10 @@ const Link = styled.a`
     ${Mask} + ${Mask} {
       transform: skewX(12deg) translateX(-.01em);
     }
+
+    ul li:last-child &::before {
+    background-color: ${theme.colors.fontSecondaryLgt};
+  }
   }
 
 `
