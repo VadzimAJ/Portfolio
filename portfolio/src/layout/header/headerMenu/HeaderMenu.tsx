@@ -45,6 +45,12 @@ const Mask = styled.span`
   overflow-y: hidden;
   color: ${theme.colors.fontAccentLgt};
 
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
   & + & {
     top: 50%;
     span{
@@ -57,12 +63,27 @@ const Mask = styled.span`
 const StyledHeaderMenu = styled.nav `
   display: flex;
   justify-content: space-between;
+  align-items: center; 
   width: 100%;
+
   ul {
     display: flex;
-
+    justify-content: center; 
+    align-items: center; 
     gap: 2rem;
     }
+    
+  & ul li:last-child{
+    padding: 0.75rem  1.25rem ;
+    background: #5222D0;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.375rem;
+    }
+
+  & ul li:last-child span{
+    color: ${theme.colors.fontSecondaryLgt};
+  }
+
 `
 
 const Link = styled.a`
@@ -91,6 +112,10 @@ const Link = styled.a`
 
   }
 
+  &:last-child::before{
+    background-color: red;
+  }
+
   &:hover {
 
     &::before{
@@ -106,6 +131,5 @@ const Link = styled.a`
       transform: skewX(12deg) translateX(-.01em);
     }
   }
-
 
 `
