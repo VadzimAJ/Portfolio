@@ -14,7 +14,7 @@ export const Project = (props:ProjectrorpsType) => {
     <StyledProject>
       <Image src={props.src} alt={props.title}/>
       <Title>{props.title}</Title>
-      <Menu menuItems={items}/>
+      <Menu transformType="capitalize" menuItems={items}/>
       <Text>{props.text}</Text>
     </StyledProject>
   );

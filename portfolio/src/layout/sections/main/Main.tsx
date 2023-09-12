@@ -27,6 +27,7 @@ export const Main = () => {
 };
 
 const Photo = styled.img `
+  padding-top: 6rem;
   max-width: 35rem;
   object-fit: cover;
 `
@@ -34,7 +35,7 @@ const StyledMain = styled.section`
   min-height: 100vh;
   display: flex;
 `
-const SmallText = styled.span`
+const SmallText = styled.p`
   font-size: 1rem;
   font-style: normal;
   text-align: start;

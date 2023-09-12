@@ -1,28 +1,36 @@
 import styled from 'styled-components';
 import { Icon } from '../../../components/icon/Icon';
+import { Container } from '../../../components/Container';
+import { Menu } from '../../../components/menu/Menu';
+
+const items = ["projects", "contacts"]
 
 export const Footer = () =>{
   return (
     <StyledFooter>
-      <Name>Vadim Anishchenko</Name>
-      <SocialList>
-        <SocialItem>
-          <SocialLink>
-            <Icon iconId={"mail"}/>
-          </SocialLink>
-        </SocialItem>
-        <SocialItem>
-          <SocialLink>
-            <Icon iconId={"linkedin"}/>
-          </SocialLink>
-        </SocialItem>
-        <SocialItem>
-          <SocialLink>
-            <Icon iconId={"github"}/>
-          </SocialLink>
-        </SocialItem>
-      </SocialList>
-      <Copyrught>2023 Vadim Anishchenko, All Rights Reserved.</Copyrught>
+      <Container>
+        <SocialList>
+          <SocialItem>
+            <SocialLink>
+              <Icon iconId={"mail"}/>
+            </SocialLink>
+          </SocialItem>
+          <SocialItem>
+            <SocialLink>
+              <Icon iconId={"linkedin"}/>
+            </SocialLink>
+          </SocialItem>
+          <SocialItem>
+            <SocialLink>
+              <Icon iconId={"github"}/>
+            </SocialLink>
+          </SocialItem>
+        </SocialList>
+        <Menu transformType="capitalize" menuItems={items}/>
+        <Copyrught>2023 Vadim Anishchenko, All Rights Reserved.</Copyrught>
+        
+      </Container>
+      
     </StyledFooter>
 
   );
